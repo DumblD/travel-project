@@ -6,7 +6,6 @@
     flex-direction: column;
     gap: 32px;
     width: 100%;
-    max-width: 1184px;
     height: 740px;
     object-fit: cover;
     background: url(../../../images/cover-trains.jpg) 0 0 no-repeat;
