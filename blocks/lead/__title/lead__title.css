@@ -1,0 +1,41 @@
+.lead__title {
+    width: 100%;
+    max-width: 720px;
+    margin: 0;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 100px;
+    color: #fff;
+}
+
+@media screen and (min-width: 320px) and (max-width: 936px) {
+    .lead__title {
+        font-size: clamp(0.4em, 11vw, 1em);
+        line-height: 1.04em;
+    }
+}
+
+  @media screen and (min-width: 395px) and (max-width: 776px) {
+    .lead__title {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 395px) {
+    .lead__title {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .lead__title {
+        font-size: clamp(0.2em, 11vw, 0.4em);
+        line-height: 1.04em;
+    }
+}
