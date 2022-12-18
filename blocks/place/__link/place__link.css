@@ -17,6 +17,5 @@
 @media screen and (max-width: 320px) {
     .place__link {
         padding-left: 5%;
-        padding-bottom: 32px;
     }
 }

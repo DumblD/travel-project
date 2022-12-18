@@ -13,7 +13,7 @@
     .photo-grid {
         gap: 14px;
         grid-template-columns: repeat(3, minmax(215px, 300px));
-        padding-bottom: 88px;
+        padding-bottom: 92px;
     }
 }
 
@@ -36,15 +36,15 @@
 
 @media screen and (max-width: 320px) {
     .photo-grid {
-        width: calc(100vw - 16px*2);
+        width: 100%;
         row-gap: 12px;
-        grid-template-columns: minmax(130px, 273px);
+        grid-template-columns: minmax(130px, 288px);
         padding-bottom: 64px;
     }
 }
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
     .photo-grid {
-        padding-bottom: 94px;
+        padding-bottom: 88px;
     }
 }
