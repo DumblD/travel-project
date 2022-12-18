@@ -4,9 +4,3 @@
     grid-template-rows: auto auto;
     row-gap: 12px;
 }
-
-@media screen and (max-width: 320px) {
-    .place__website {
-        row-gap: 0;
-    }
-}

@@ -1,73 +1,50 @@
 .photo-grid {
-    --ratio: 4;
-    --gap: 16px;
-    --num-col: 3;
-
     margin: 0 auto;
     max-width: 1184px;
-    width: 100%;
+    width: calc(100vw - 48px*2);
     display: grid;
-    grid-template-columns: repeat(auto-fit, 284px);
-    gap: var(--gap);
+    grid-template-columns: repeat(4, minmax(220px, 284px));
+    gap: 16px;
     padding-bottom: 92px;
     justify-content: center;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .photo-grid {
-        --ratio: 3.4;
-        --col-width: calc(100% / var(--ratio));
-        grid-template-columns: repeat(auto-fit, var(--col-width));
+        gap: 14px;
+        grid-template-columns: repeat(3, minmax(215px, 300px));
+        padding-bottom: 88px;
     }
 }
 
 @media screen and (min-width: 610px) and (max-width: 768px) {
     .photo-grid {
-        max-width: 720px;
-        column-gap: 12px;
-        row-gap: 14px;
-        --ratio: 2.04;
-        --col-width: calc(100% / var(--ratio));
-        grid-template-columns: repeat(auto-fit, var(--col-width));
+        width: calc(100vw - 24px*2);
+        gap: 16px;
+        grid-template-columns: repeat(2, minmax(273px, 352px));
     }
 }
 
 @media screen and (min-width: 320px) and (max-width: 610px) {
     .photo-grid {
-        max-width: 610px;
+        width: calc(100vw - 24px*2);
         column-gap: 10px;
-        row-gap: 10px;
-        --ratio: 2;
-        --col-width: calc(100% / var(--ratio));
-        grid-template-columns: var(--col-width) var(--col-width);
+        row-gap: 12px;
+        grid-template-columns: repeat(2, minmax(130px, 273px));
     }
 }
 
 @media screen and (max-width: 320px) {
     .photo-grid {
-        max-width: 288px;
+        width: calc(100vw - 16px*2);
         row-gap: 12px;
-        --ratio: 1;
-        --col-width: calc(100% / var(--ratio));
-        grid-template-columns: repeat(auto-fit, var(--col-width));
-        padding-bottom: 65px;
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    .photo-grid {
-        padding-bottom: 88px;
+        grid-template-columns: minmax(130px, 273px);
+        padding-bottom: 64px;
     }
 }
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
     .photo-grid {
         padding-bottom: 94px;
-    }
-}
-
-@media screen and (max-width: 320px) {
-    .photo-grid {
-        padding-bottom: 64px;
     }
 }

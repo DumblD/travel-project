@@ -1,5 +1,6 @@
 .cover {
-    width: 93%;
+    max-width: 1184px;
+    width: calc(100vw - 48px*2);
     display: block;
     margin: 0 auto;
     padding-bottom: 92px;
