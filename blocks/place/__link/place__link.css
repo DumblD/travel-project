@@ -7,8 +7,16 @@
     text-decoration-line: underline;
     color: #fff;
     transition: opacity .2s linear .1s;
+    margin: 0;
 }
 
 .place__link:hover {
     opacity: .8;
+}
+
+@media screen and (max-width: 320px) {
+    .place__link {
+        padding-left: 5%;
+        padding-bottom: 32px;
+    }
 }

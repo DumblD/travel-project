@@ -8,11 +8,23 @@
     justify-self: end;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .footer__copyright {
+        font-size: 12px;
+    }
+}
+
 @media screen and (max-width: 750px) {
     .footer__copyright {
         font-size: 14px;
         line-height: 14px;
         padding-top: 48px;
         justify-self: start;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .footer__copyright {
+        padding-top: 12px;
     }
 }

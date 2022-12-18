@@ -1,4 +1,4 @@
- .cover__background {
+.cover__background {
     position: relative;
     display: flex;
     justify-content: center;
@@ -12,8 +12,55 @@
     background-size: cover;
 }
 
-@media screen and (max-width: 420px) {
+.cover__background:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+	height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .3);
+    z-index: 2;
+    transition: background-color 300ms linear;
+  }
+
+.cover__background:hover:after {
+    background-color: rgba(0, 0, 0, .5);
+  }
+
+@media screen and (min-width: 1280px) {
     .cover__background {
-        gap: 16px;
+        padding-top: 12px;
+    }
+}
+
+ @media screen and (min-width: 1024px) and (max-width: 1280px) {
+    .cover__background {
+        padding-top: 12px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .cover__background {
+        width: 100%;
+        max-width: 1024px;
+        height: 640px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .cover__background {
+        width: 100%;
+        max-width: 768px;
+        height: 480px;
+        padding-top: 12px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .cover__background {
+        width: 100%;
+        max-width: 320px;
+        height: 200px;
     }
 }

@@ -12,8 +12,14 @@
 @media screen and (max-width: 750px) {
     .footer__links {
         grid-template-columns: 186px;
-        grid-auto-rows: repeat(6, auto);
+        grid-template-rows: repeat(6, auto);
         justify-content: start;
-        gap: 18px;
+        row-gap: 32px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .footer__links {
+        padding-left: 3%;
     }
 }

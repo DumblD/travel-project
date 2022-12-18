@@ -22,5 +22,6 @@
     .intro__title {
         font-size: clamp(26px, 10vw, 32px);
         line-height: 1.07em;
+        max-width: 250px;
     }
   }

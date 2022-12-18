@@ -1,15 +1,9 @@
 .logo__img {
   width: 176px;
-  max-width: 250px;
+  height: 52px;
 }
 
-@media screen and (min-width: 1600px) {
-  .logo__img {
-      width: 13%;
-  }
-}
-
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 720px) {
   .logo__img {
     width: 30%;
   }
@@ -18,5 +12,12 @@
 @media screen and (max-width: 631px) {
   .logo__img {
     width: 142px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .logo__img {
+    width: 142px;
+    height: 42px;
   }
 }

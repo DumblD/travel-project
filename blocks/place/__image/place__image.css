@@ -7,3 +7,9 @@
     align-self: start;
     justify-self: end;
 }
+
+@media screen and (max-width: 320px) {
+    .place__image {
+        margin-bottom: 32px;
+    }
+}
