@@ -25,7 +25,7 @@
   }
 
 .cover__background:hover:after {
-    background-color: rgba(42, 44, 47, .5);
+    background-color: rgba(42, 44, 47, .8);
   }
 
 @media screen and (min-width: 1280px) {
@@ -51,7 +51,7 @@
     .cover__background {
         width: 100%;
         max-width: 768px;
-        padding-top: 12px;
+        padding-top: 18px;
     }
 }
 
@@ -59,6 +59,6 @@
     .cover__background {
         width: 100%;
         max-width: 320px;
-        padding-top: 42px;
+        padding-top: 18px;
     }
 }

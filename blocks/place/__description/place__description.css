@@ -1,18 +1,18 @@
 .place__description {
     display: grid;
     grid-template-rows: min-content min-content;
-    row-gap: 32px;
+    row-gap: 26px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .place__description {
-        row-gap: 8px;
+        row-gap: 27px;
     }
 }
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
     .place__description {
-        row-gap: 7px;
+        row-gap: 25px;
     }
 }
 
