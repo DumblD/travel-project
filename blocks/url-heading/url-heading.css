@@ -7,10 +7,11 @@
     letter-spacing: 2px;
     color: #aaa;
     text-transform: uppercase;
+    box-sizing: border-box;
 }
 
 @media screen and (max-width: 320px) {
     .url-heading {
-        padding-left: 5%;
+        padding-left: 16px;
     }
 }

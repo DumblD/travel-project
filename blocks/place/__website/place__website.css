@@ -3,4 +3,5 @@
     display: grid;
     grid-template-rows: auto auto;
     row-gap: 12px;
+    box-sizing: border-box;
 }
